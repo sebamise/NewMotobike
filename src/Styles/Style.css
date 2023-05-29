@@ -1,0 +1,96 @@
+.navbar-collapse {
+  transition: 1s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
+}
+
+.carousel-item {
+  transition: 0.8s !important;
+  -webkit-transition: 0.8s !important;
+  -moz-transition: 0.8s !important;
+  -ms-transition: 0.8s !important;
+  -o-transition: 0.8s !important;
+}
+
+.SeccionTitulo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.Titulo {
+  background: #000 none repeat scroll 0 0;
+  border-right: 6px solid #f3542d;
+  color: #fff;
+  font-size: 36px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0);
+  transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0);
+  -webkit-transform-style: flat;
+  transform-style: flat;
+}
+
+.zoom-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-container img {
+  transition: transform 0.3s;
+}
+
+.zoom-container:hover img {
+  transform: scale(1.2);
+}
+
+.card:hover .zoom-container img {
+  transform: scale(1.2);
+}
+
+.card:hover .card-body {
+  background-color: #f3542d;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.card:hover .btn-primary {
+  background-color: #ff7800;
+  transition: background-color 0.5s;
+  border: none;
+}
+
+.ContenedorWelcome {
+  background: url(../Media/Welcome.jpg) fixed 0 0;
+  color: #fff !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 380px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.ContenedorServicios{
+  background: url(../Media/Servicios.jpg) fixed 0 0;
+  min-height: 380px;
+padding: 40px 0;
+text-align: center;
+}
+
+li::marker {
+  color: black; 
+}
+
+.Portada{
+  background: url(../Media/Portada.jpg);
+  padding: 1.5rem;
+  text-shadow: 1px 1px 2px #000;
+  font-size: 16px;
+}
