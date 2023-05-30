@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Styles/Style.css';
 import { ImagenNosotros1, ImagenNosotros2 } from './Imagenes';
+import { Link } from 'react-router-dom';
 
 export default function Nosotros() {
   return (
@@ -11,15 +12,17 @@ export default function Nosotros() {
         <div className="card  mb-5 ms-md-5 ms-0" style={{maxWidth: "100%"}} >
   <div className="row g-0">
     <div className="col-md-6 col-12">
+      <Link to="/Motobike">
       <img src={ImagenNosotros1} className="img-fluid rounded-start h-100 w-100" alt="..."/>
+      </Link>
     </div>
     <div className="col-md-6 col-12">
       <div className="card-body h-100">
         <h3 className="card-title">Su Titulo Aqui</h3>
         <p className="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classNameical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, United States.</p>
-        <a href="#" className="btn btn-primary" id="button">
+        <Link to="/Motobike" className="btn btn-primary" id="button">
             Mas Detalles
-          </a>
+          </Link>
       </div>
     </div>
   </div>
@@ -28,15 +31,17 @@ export default function Nosotros() {
 <div className="card  mb-5 ms-md-5 ms-0 " style={{maxWidth: "100%"}} >
   <div className="row g-0 flex-row-reverse">
     <div className="col-md-6 col-12">
+      <Link to="/Motobike">
       <img src={ImagenNosotros2} className="img-fluid rounded-start h-100" alt="..."/>
+      </Link>
     </div>
     <div className="col-md-6 col-12">
       <div className="card-body h-100">
         <h3 className="card-title">Su Titulo Aqui</h3>
         <p className="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classNameical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, United States.</p>
-        <a href="#" className="btn btn-primary" id="button">
+        <Link to="/Motobike" className="btn btn-primary" id="button">
             Mas Detalles
-          </a>
+          </Link>
       </div>
     </div>
   </div>

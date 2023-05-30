@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import {articles} from '../Components/ArticlesMin';
+import { articles } from '../Components/Article';
 
 export function Articulo() {
   const { id } = useParams();
@@ -12,7 +12,7 @@ export function Articulo() {
   const { title, date, content,img } = article;
 
   return (
-    <div className="container">
+    <div className="container mb-5">
       <h1>{title}</h1>
       <p>Fecha de publicación: {date}</p>
       <div className="row">

@@ -25,10 +25,7 @@ export default function Motobike() {
       <section className="Portada">
         <h2 className="text-light">Motobike</h2>
         <span className="text-light">
-          Use the form below to get in touch with us. Share your specific
-          requirements and we'll be happy to reply back shortly. You are also
-          welcome to contact us via phone, emial or at our office during working
-          hours.
+        Thank you for visiting our blog. Share your thoughts and we'll be happy to get back to you shortly.
         </span>
       </section>
 
@@ -41,22 +38,22 @@ export default function Motobike() {
           )}
           <div className={windowWidth >= 1366 ? "col-md-8" : "col-md-12"}>
             {articles.map((article, index) => (
-              <div className="article" key={index}>
+              <div className="article mt-5" key={index}>
                 <h2>{article.title}</h2>
                 <p>
                   <strong>Fecha de publicación:</strong> {article.date}
                 </p>
                 <div className="row">
                   <div className="col-md-4">
-                  
+                  <Link to={`/articulo/${article.id}`}>
                 <img src={article.img} alt="Miniatura" className="w-100" />
-              
+                </Link>
                     
                   </div>
                   <div className="col-md-8">
                     <p>{article.content}</p>
                     <Link to={`/articulo/${article.id}`}>
-                      <button className="btn">Leer más</button>
+                      <button className="btn">Leer más...</button>
                     </Link>
                     <hr />
                   </div>
@@ -68,7 +65,7 @@ export default function Motobike() {
             )}
           </div>
           {windowWidth < 1366 && (
-            <div className="col-md-12">
+            <div className="col-md-12 mt-5 ">
               <Sidebar className="mt-5 pb-5" />
             </div>
           )}

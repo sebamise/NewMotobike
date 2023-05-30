@@ -6,13 +6,16 @@ import Contacto from "../Templates/Contacto";
 import Motobike from "../Templates/Motobike";
 import Home from "../Templates/Home";
 import { Articulo } from "../Templates/Articulo";
+import MyPage from "../Templates/MyPage";
 
 export default function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <img src={logo} alt="Logo" style={{ width: "200px" }} />
+        <Link to="/" style={{ textDecoration: 'none' }}>
+        <img src={logo} alt="Logo" style={{ width: "200px" }} />
+      </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -46,7 +49,11 @@ export default function Navbar() {
         <Route path="/Motobike" element={<Motobike/>} />
         <Route path="/Contacto" element={<Contacto/>} />
         <Route path="/articulo/:id" element={<Articulo/>}/>
+        <Route path="/MyPage" element={ <MyPage/> }/>
       </Routes>
+
+    
     </>
+
   );
 }

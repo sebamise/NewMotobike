@@ -1,18 +1,21 @@
 import React from "react";
 import "../Styles/Style.css";
+import { Link } from "react-router-dom";
 
 export function Service({ text, image }) {
   return (
     <div className="card mx-2 mb-4" style={{ width: "18rem" }}>
       <div className="zoom-container">
+        <Link to="/Motobike" >
         <img src={image} className="card-img-top" alt="..." />
+        </Link>
       </div>
       <div className="card-body" id="text-container">
         <p className="card-text">{text}</p>
         <section className="text-center">
-          <a href="#" className="btn btn-primary" id="button">
-            Mas Detalles
-          </a>
+          <Link to="/Motobike" >
+           <button className="btn btn-primary" id="button">Mas Detalles</button> 
+          </Link>
         </section>
       </div>
     </div>
